@@ -1,6 +1,7 @@
 #define VERSION "0.0.1"
 
 #include <Arduino.h>
+#include <stdio.h>
 
 #define USE_SERIAL Serial
 
@@ -10,6 +11,7 @@
 #define OTA_HOST "ardy.io"
 #define OTA_URL "/luminescence/ota"
 
+#include <ESP8266HTTPClient.h>
 #include <ESP8266WiFi.h>
 #include <ESP8266WiFiMulti.h>
 #include <ESP8266httpUpdate.h>
